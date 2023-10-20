@@ -1,0 +1,1 @@
+# berds_list = ["hawk","vorona","petukh"]

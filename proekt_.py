@@ -128,8 +128,8 @@ class ToDoList:
         for task in self.tasks:
             print(task)
 
-    def update_task(self):
-        for task in self.tasks:
+    def update_task(self, id):
+        for task in self.tasks:           
             print(task)
             
     def remove_task(self, task_id):
