@@ -129,8 +129,20 @@ class ToDoList:
             print(task)
 
     def update_task(self, id):
-        for task in self.tasks:           
-            print(task)
+        for task in self.tasks:
+            if id == task.id:
+                print("""
+                1) Название
+                2) Описание
+                3) Срок выполнения
+                4) Поменять статус      """)
+                n = input("Что вы хотите изменить: ")
+                
+                if n == "1" :
+                    new_title = input("Введите название таска: ")
+                    task.title = new_title
+                    
+                  
             
     def remove_task(self, task_id):
         for task in self.tasks:
